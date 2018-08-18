@@ -1,0 +1,697 @@
+
+/*--------------------------------------------------------------
+Body
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+button {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+input {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+select {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1 {
+    clear: both;
+}
+
+h2 { 
+    clear: both;
+}
+
+h3 {
+    clear: both;
+}
+
+h4 {
+    clear: both,
+}
+
+h5 { 
+    clear: both,
+}
+
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+figure {
+	margin: 0;
+}
+
+/* Global layouts */
+@media screen and (min-width: 700px) {
+    .two-column {
+        column-count: 2;
+        column-gap: 2.4em;
+    }
+}
+
+/* Global buttons */
+.content-button {
+	padding: .5em 1em;
+	border: 3px solid #B51C35;
+	/*border-radius: 10px;*/
+	font-weight: 600;
+}
+
+a.content-button {
+	color: black;
+	text-decoration: none;
+}
+
+a.content-button:focus,
+a.content-button:hover {
+	background: #B51C35;
+	color: #FFFCED;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/*--------------------------------------------------------------
+Header styles
+--------------------------------------------------------------*/
+
+.header {
+    padding: 0;
+    background-color: #002254;
+}
+
+@media screen and (min-width: 25em) {
+    .site-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-branding {
+    margin-right: 1em;
+}
+
+.site-branding a {
+    text-decoration: none;
+}
+
+.site-branding a:focus,
+.site-branding a:hover {
+    text-decoration: underline white;
+}
+
+.icon-mmlogo {
+    display: flex;
+    width: .75em;
+    height: .75em;
+    margin-right: .35em;
+    padding: .4em;
+    border: 1px solid white;
+}
+
+.icon-mmlogo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 1.4em;
+}
+
+.title a {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+/*--------------------------------------------------------------
+Mobile-first menu
+--------------------------------------------------------------*/
+.menu {
+	padding: 1em 2em;
+		background-color: #002254;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    padding: .6em 0;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    transition: all .4s;
+}
+
+.menu a:focus,
+.menu a:hover {
+    padding-left: 1em;
+    background: white;
+    color: #002254;
+}
+
+@media screen and (max-width: 25em){
+
+    .menu > ul:last-of-type > li:nth-last-child(2) > a {
+        border-bottom: none;
+    }
+
+    a.reserve {
+        margin-top: .4em;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid white;
+
+    }
+
+    a.reserve:focus,
+    a.reserve:hover {
+        padding-left: 0;
+        background: white;
+        color: #002254;
+    }
+}
+
+@media screen and (min-width: 25em){
+	.menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+	}
+
+	.menu li {
+
+	}
+
+    .menu a {
+        padding: .8em 1em;
+        border-bottom: none;
+    }
+
+    .menu a:focus,
+    .menu a:hover {
+        background: inherit;
+        color: white;
+        text-decoration: underline;
+    }
+
+
+    a.reserve {
+        margin: .4em 1em 0;
+        padding: .3em 1em;
+        border: 1px solid white;
+        transition: none;
+    }
+
+    a.reserve:focus,
+    a.reserve:hover {
+        background: white;
+        color: #002254;
+        text-decoration: none;
+    }
+}
+
+/*--------------------------------------------------------------
+Modules
+--------------------------------------------------------------*/
+
+.splash {
+	padding-bottom: 2em;
+	background-color: #f2f2f2;
+}
+
+.splash-content {
+	padding: 1.5em;
+}
+
+.splash-text {
+    columns: 2;
+    column-gap: 2em;
+}
+
+.splash-text p {
+	padding-top: 0;
+}
+
+/* CTA */
+
+.cta {
+    padding: 3em;
+    background: #b51c35;
+    text-align: center;
+}
+
+.cta a {
+    padding: 0 .5em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fffced;
+    text-decoration: none;
+    border: 5px solid #fffced;
+}
+
+@media screen and (min-width: 40em) {
+    .cta a {
+        font-size: 3em;
+        border-width: 10px;
+    }
+}
+
+.cta a:focus,
+.cta a:hover {
+    background: #fffced;
+    color: #b51c35;
+}
+
+/* Three Reasons */
+
+.three-reasons {
+    margin: 2em 0;
+    padding: 0;
+    background: white;
+}
+
+.reason {
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+}
+
+.reason figcaption {
+    padding: 0 1.5em;
+}
+
+@media screen and (min-width: 50em) {
+    .three-reasons {
+        display: flex;
+        margin: 1em auto 0;
+    }
+
+    .reason {
+        width: calc(100/3)%;
+    }
+
+}
+
+@media screen and (min-width: 70em) {
+    .three-reasons {
+        padding: 2em 0 0;
+    }
+
+}
+
+.content-title {
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+
+.reason p {
+    margin: .5em 0 1.8em;
+}
+
+/* Feature */
+
+.features {
+    margin: 2em 0;
+}
+
+.feature {
+    background: white;
+    margin-bottom: 1em;
+}
+
+.feature figcaption {
+    padding: 0 2em 3em;
+}
+
+@media screen and (min-width: 50em) {
+    .features {
+        -js-display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em auto 2em;
+        padding: 0;
+    }
+
+    .feature {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .feature figcaption {
+        padding: 0 1.5em 3em;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.main-area > * {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 20000px) {
+
+
+		/* Four-column layout. Two center columns have a total max width of 50em: */
+		.main-area > * {
+            max-width: none;
+        	/*margin: 0;*/
+			display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+		}
+
+		/* Center items by placing them in the two center columns: */
+		.splash-content,
+		.more-content,
+		.buckets ul {
+			grid-column: 2/4;
+		}
+
+		/* Use automatic grid placement + span to let each item span two columns:*/
+		.twin,
+		.colophon aside {
+			grid-column: span 2;
+		}
+
+		.header{
+            grid-area: header;
+			display: grid;
+			grid-template-columns: 2.1fr 1fr;
+        }
+
+			.identity {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				grid-column: 1/2;
+				grid-row: 1/2;
+				height: 100%;
+				background: hsla(246, 40%, 30%, .6);
+				color: white;
+				z-index: 1;
+			}
+
+			.feature {
+				grid-column: 1/3;
+				grid-row: 1/2;
+			}
+
+	}
+}
+
+
+/*--------------------------------------------------------------
+Cube
+--------------------------------------------------------------*/
+
+div#container {
+    perspective: 1500px;
+}
+div#cube {
+   position: relative;
+   transform-style: preserve-3d;
+}
+div#cube img {
+   position: absolute; top: 0; left: 0;
+}
+
+img#front { transform: rotateY(0deg) translateZ(100px); }
+img#back { transform: rotateY(180deg) translateZ(100px);	}
+img#bottom { transform: rotateX(-90deg) translateZ(100px);	}
+img#left { transform: rotateY(-90deg) translateZ(100px);	}
+img#right { transform: rotateY(90deg) translateZ(100px);	}
+img#top { transform: rotateX(90deg) translateZ(100px); }
+
+div#cube {
+   transform: rotateX(-25deg) rotateY(-25deg) rotateZ(10deg);
+   transition: transform 2s ease-in-out;
+}
+
+div#cube:hover {
+   transform: rotateX(40deg) rotateY(-215deg) rotateZ(-10deg);
+}
+
+
+/*--------------------------------------------------------------
+Cube Transition
+--------------------------------------------------------------*/
+
+nav#topLinks a {
+    position: relative;	
+    color: rgb(224,207,191);
+    font-size: 1.5em;	
+    top: 0px;
+    left: 0px;
+    text-shadow: rgba(0, 0, 0, 1) -1px -1px 1px;	
+    transition: all 1.2s;             
+ }
+ 
+ nav#topLinks a:hover { 
+    color: rgb(92,75,57);
+    font-size: 2.4em;
+    top: -30px;
+    left: 12px;
+    text-shadow: rgba(0, 0, 0, 0.35) 10px 10px 5px;    
+ }
+ 
+ /*--------------------------------------------------------------
+Cube Base
+--------------------------------------------------------------*/
+* Basic styles to be used with all devices and under all conditions */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Set the default page element styles */
+
+body {
+   line-height: 1.2em;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+
+/* cube Styles */
+
+div#container {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin: 40px 30px 30px 0px;	
+}
+
+div#cube {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+    float: right;
+    margin: -620px;
+
+}
+
+div#container p {
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 0.8em;
+	clear: left;
+	padding: 70px 0px;
+}
+
+div#cube img {
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+
+
+/* Footer Styles */
+
+footer {
+   border-top: 1px solid rgba(51, 51, 51, 0.4);
+   clear: left;
+   text-align: right;
+   width: 100%;
+}
+
+footer, footer span a {
+   padding: 10px;
+   color: rgba(51, 51, 51, 0.7);
+}
+
+footer span a:hover {
+   color: rgb(0, 167, 167);
+   text-decoration: underline;
+}
